@@ -1,4 +1,5 @@
 import src.sum as sum_file
+import src.avg as avg_file
 
 def main():
     filename = './data/int_num.txt'
@@ -9,6 +10,8 @@ def main():
     print("Sum of numbers:", total_sum)
 
     option = 'write'
+    # sum_file.read_write_file(filename, option, f"Sum of numbers: {total_sum}")
+
     sum_file.read_write_file(filename, option, total_sum)
 
 if __name__ == "__main__":
