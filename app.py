@@ -18,7 +18,7 @@ def main():
 
     # File path
     filename = './data/int_num.txt'
-    
+
     # Reading content from the file
     option = 'read'
     content = rwtf.read_write_file(filename, option)
@@ -29,7 +29,7 @@ def main():
     # Calculating sum and average of the numbers
     file_total_sum = sum_file.sum_file(numbers)
     file_avg = avg_file.avg_file(numbers)
-    
+
     # Printing numbers, sum, and average
     print("numbers: ", numbers)
     print("Sum of numbers: ", file_total_sum)
@@ -37,7 +37,8 @@ def main():
 
     # Writing sum and average back to the file
     option = 'write'
-    rwtf.read_write_file(filename, option, f"Sum of numbers: {file_total_sum} and Avg: {file_avg}  \nList of numbers: {numbers}")
+    rwtf.read_write_file(filename, option, f"Sum of numbers: {file_total_sum}" +
+                         f" and Avg: {file_avg}  \nList of numbers: {numbers}")
 
 if __name__ == "__main__":
     main()
