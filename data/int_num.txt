@@ -1,4 +1,4 @@
-1-2-3-4-11-6-1-5-13
+1-2-3-4-11-6-1-5-13- 5
 Sum of numbers: 46 and Avg: 5.111111111111111  
 List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13]
 Sum of numbers: 46 and Avg: 5.111111111111111  
@@ -19,3 +19,13 @@ Sum of numbers: 46 and Avg: 5.111111111111111
 List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13]
 Sum of numbers: 46 and Avg: 5.111111111111111  
 List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13]
+Sum of numbers: 46 and Avg: 5.111111111111111  
+List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13]
+Sum of numbers: 51 and Avg: 5.1  
+List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13, 5]
+Sum of numbers: 51 and Avg: 5.1  
+List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13, 5]
+Sum of numbers: 51 and Avg: 5.1  
+List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13, 5]
+Sum of numbers: 51 and Avg: 5.1  
+List of numbers: [1, 2, 3, 4, 11, 6, 1, 5, 13, 5]

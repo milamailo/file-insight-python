@@ -1,9 +1,11 @@
-"""Convert"""
-def convert_file_list(string):
-    """Convert from txt file to list of integers"""
-    numbers = string.split('-')
-    lst =[]
-    for n in numbers:
-        lst.append(int(n))
+"""Convert from txt file to list of integers"""
+import re
 
-    return  lst
+def convert_file_list(string):
+    """Split the string and convert non-empty parts to integers"""
+    numbers = re.split(r'[,|\-\s]', string)
+    lst = []
+    for n in numbers:
+        if n:
+            lst.append(int(n))
+    return lst

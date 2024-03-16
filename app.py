@@ -12,6 +12,8 @@ import src.sum as sum_file
 import src.avg as avg_file
 import src.str_to_list as cfl
 import src.read_write_to_file as rwtf
+import src.parse_employee_data as emp_list
+import src.calculate_avg_age as emp_avg_age
 
 def main_menu():
     """Printing the choice to select"""
@@ -28,6 +30,7 @@ def main():
     """File analysis and statistics"""
     read = "read"
     write = "write"
+    all_lines = "all_lines"
     filename_num = './data/int_num.txt'
     filename_emp = './data/employees_list.txt'
 
@@ -62,8 +65,15 @@ def main():
 
         elif choice == '2':
             clear_screen()
-            lines = content = rwtf.read_write_file(filename_emp, read)
-
+            # Read data from file
+            lines = content = rwtf.read_write_file(filename_emp, all_lines)
+            # Parse employee data
+            employees = emp_list.parse_employee_data(lines)
+            # Calculate average age
+            avg_age = emp_avg_age.calculate_avg_age(employees)
+            print("Average age of employees:", avg_age)
+            print()
+            input("Please hit any key to back to menu.")
         elif choice == '0':
             clear_screen()
             print("Exiting program...")
