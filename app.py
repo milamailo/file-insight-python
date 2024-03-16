@@ -17,6 +17,7 @@ def main_menu():
     """Printing the choice to select"""
     print("Main Menu:")
     print("1. SUM & AVG")
+    print("2. Employees avg age")
     print("0. Exit")
 
 def clear_screen():
@@ -58,6 +59,10 @@ def main():
                                  f" and Avg: {file_avg}  \nList of numbers: {numbers}")
             print()
             input("Please hit any key to back to menu.")
+
+        elif choice == '2':
+            clear_screen()
+            
 
         elif choice == '0':
             clear_screen()
