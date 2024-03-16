@@ -28,13 +28,8 @@ def main():
     """File analysis and statistics"""
     read = "read"
     write = "write"
-    filename = './data/int_num.txt'
-
-    # Reading content from the file
-    content = rwtf.read_write_file(filename, read)
-
-    # Converting string to list of numbers
-    numbers = cfl.convert_file_list(content)
+    filename_num = './data/int_num.txt'
+    filename_emp = './data/employees_list.txt'
 
 
     while True:
@@ -45,6 +40,11 @@ def main():
 
         if choice == '1':
             clear_screen()
+            # Reading content from the file
+            content = rwtf.read_write_file(filename_num, read)
+            # Converting string to list of numbers
+            numbers = cfl.convert_file_list(content)
+
             # Calculating sum and average of the numbers
             file_total_sum = sum_file.sum_file(numbers)
             file_avg = avg_file.avg_file(numbers)
@@ -55,14 +55,14 @@ def main():
             print("Average of numbers: ", file_avg)
 
             # Writing sum and average back to the file
-            rwtf.read_write_file(filename, write, f"Sum of numbers: {file_total_sum}" +
+            rwtf.read_write_file(filename_num, write, f"Sum of numbers: {file_total_sum}" +
                                  f" and Avg: {file_avg}  \nList of numbers: {numbers}")
             print()
             input("Please hit any key to back to menu.")
 
         elif choice == '2':
             clear_screen()
-            
+            lines = content = rwtf.read_write_file(filename_emp, read)
 
         elif choice == '0':
             clear_screen()
